@@ -3,13 +3,32 @@
         <div class="height-black">
             <h2>Content goes here </h2>
         </div>
-        <div class="height-blu">
-            <ul>
-                <li v-for="(card, index) in listCard">
-
-                    {{ card.text.img }}
+        <div class="height-blu ">
+            <ul class="d-flex padding align-items-center">
+                <li>
+                    <img :src="'/images/buy-comics-digital-comics.png'" alt="">
+                    <span>DIGITAL COMICS</span>
+                </li>
+                <li>
+                    <img :src="'/images/buy-comics-merchandise.png'" alt="">
+                    <span>DC MERCHANDISE</span>
 
                 </li>
+                <li>
+                    <img :src="'/images/buy-comics-digital-comics.png'" alt="">
+                    <span>DIGITAL COMICS</span>
+                </li>
+                <li>
+                    <img :src="'/images/buy-comics-shop-locator.png'" alt="">
+                    <span>SHOP LOCATOR</span>
+                </li>
+                <li>
+                    <img :src="'/images/buy-comics-subscriptions.png'" alt="">
+                    <span>SUBSCRIPTIONS</span>
+                </li>
+
+
+
 
             </ul>
 
@@ -20,35 +39,7 @@
 <script>
 export default {
     name: 'MainApp',
-    data() {
 
-        return {
-            listCard: [
-
-                {
-                    img: '/images/buy-comics-digital-comics',
-                    text: 'DIGITAL COMICS'
-                },
-                {
-                    img: '/images/buy-comics-mercandise',
-                    text: 'DC MERCANDISE'
-                },
-                {
-                    img: '/images/buy-comics-digital-comics',
-                    text: 'DIGITAL COMICS'
-                },
-                {
-                    img: '/images/buy-comics-shop-locator',
-                    text: 'SHO LOCATOR'
-                }, {
-                    img: '/images/buy-comics-subscriptions',
-                    text: 'SUBSCRIPTIONS'
-                },
-            ]
-
-
-        }
-    }
 
 }
 </script>
@@ -74,5 +65,24 @@ h2 {
     padding-left: 300px;
     padding-top: 50px;
 
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+}
+
+.padding {
+    padding-left: 300px;
+    padding-top: 30px;
+
+}
+
+span {
+    color: white;
+}
+
+img {
+    width: 45px;
 }
 </style>
