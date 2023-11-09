@@ -1,7 +1,12 @@
 <template>
-    <div>
-        <h2>Main</h2>
-    </div>
+    <main>
+        <div class="height-black">
+            <h1>Content goes here </h1>
+        </div>
+        <div>
+
+        </div>
+    </main>
 </template>
 
 <script>
@@ -10,4 +15,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.height-black {
+    height: 150px;
+    background-color: black;
+}
+
+h1 {
+    color: blue
+}
+</style>
