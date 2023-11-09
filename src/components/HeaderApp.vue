@@ -1,10 +1,10 @@
 <template>
-    <main class="d-flex heigth align-items-center">
+    <main class="d-flex justify-content-between heigth align-items-center">
         <div class="padding ">
             <img :src="'/images/dc-logo.png'" alt="">
         </div>
         <div>
-            <ul class="d-flex">
+            <ul class="d-flex p-right">
                 <li class="p-10" v-for="(link, index) in list">
                     {{ link.text }}
                 </li>
@@ -69,7 +69,7 @@ export default {
 <style lang="css" scoped>
 .padding {
     padding-left: 300px;
-    padding-right: 300px;
+
 }
 
 .heigth {
@@ -84,5 +84,9 @@ li {
 
 .p-10 {
     padding: 10px;
+}
+
+.p-right {
+    padding-right: 400px;
 }
 </style>

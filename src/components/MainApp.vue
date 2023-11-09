@@ -69,12 +69,13 @@ h2 {
 
 li {
     list-style: none;
-    padding: 20px;
+    padding: 40px;
 }
 
 .padding {
     padding-left: 300px;
-    padding-top: 30px;
+    padding-top: 15px;
+
 
 }
 
