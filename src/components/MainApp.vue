@@ -1,9 +1,12 @@
 <template>
     <main>
         <div class="height-black">
-            <h1>Content goes here </h1>
+            <h2>Content goes here </h2>
         </div>
         <div>
+            <ul>
+
+            </ul>
 
         </div>
     </main>
@@ -21,7 +24,10 @@ export default {
     background-color: black;
 }
 
-h1 {
-    color: blue
+h2 {
+    color: white;
+    padding-left: 300px;
+    padding-top: 50px;
+
 }
 </style>

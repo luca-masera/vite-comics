@@ -4,39 +4,12 @@
             <img :src="'/images/dc-logo.png'" alt="">
         </div>
         <div>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
+            <ul class="d-flex">
+                <li class="p-10" v-for="(link, index) in list">
+                    {{ link.text }}
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled active" aria-current="page" href="#">Active</a>
-                </li>
-            </ul>
 
+            </ul>
         </div>
 
 
@@ -46,7 +19,49 @@
 <script>
 
 export default {
-    name: 'HeaderApp'
+    name: 'HeaderApp',
+    data() {
+
+        return {
+            list: [
+
+                {
+                    text: 'Characters',
+                    url: '#'
+
+                },
+                {
+                    text: 'Comics',
+                    url: '#'
+                },
+                {
+                    text: 'Movie',
+                    url: '#'
+                },
+                {
+                    text: 'Tv',
+                    url: '#'
+                },
+                {
+                    text: 'Games',
+                    url: '#'
+                },
+                {
+                    text: 'Video',
+                    url: '#'
+                },
+                {
+                    text: 'Shop',
+                    url: '#'
+                },
+                {
+                    text: 'Contacts',
+                    url: '#'
+                }
+            ]
+
+        }
+    }
 
 }
 </script>
@@ -61,5 +76,13 @@ export default {
     height: 150px;
 
 
+}
+
+li {
+    list-style: none;
+}
+
+.p-10 {
+    padding: 10px;
 }
 </style>
