@@ -1,10 +1,6 @@
 <template>
     <main>
-        <div class="height-black">
-            <img :src="thumb" :alt="type">
 
-            <h2>{{ series }}</h2>
-        </div>
         <div class="height-blu ">
             <ul class="d-flex padding align-items-center">
                 <li>
@@ -42,28 +38,20 @@
 import { stringifyExpression } from '@vue/compiler-core';
 
 export default {
-    name: 'MainApp',
+    name: 'MainApp'
 
-    props: {
-        thumb: String,
-        series: String,
-        type: String
 
-    }
 
 }
 </script>
 
 <style lang="css" scoped>
 main {
-    height: 300px;
+
     background-color: blue;
 }
 
-.height-black {
-    height: 150px;
-    background-color: black;
-}
+
 
 .height-blu {
     height: 150px;
