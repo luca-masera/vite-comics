@@ -1,7 +1,9 @@
 <template>
     <main>
         <div class="height-black">
-            <h2>Content goes here </h2>
+            <img :src="thumb" :alt="type">
+
+            <h2>{{ series }}</h2>
         </div>
         <div class="height-blu ">
             <ul class="d-flex padding align-items-center">
@@ -37,9 +39,17 @@
 </template>
 
 <script>
+import { stringifyExpression } from '@vue/compiler-core';
+
 export default {
     name: 'MainApp',
 
+    props: {
+        thumb: String,
+        series: String,
+        type: String
+
+    }
 
 }
 </script>

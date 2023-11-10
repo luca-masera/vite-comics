@@ -3,7 +3,7 @@
         <div class="d-flex justify-content-between heigth padding-left  ">
             <div class="d-flex">
                 <div>
-                    <ul class="pt-4">
+                    <ul class="pt-4 contai">
                         <li>
                             <h5>DC COMICS</h5>
                         </li>
@@ -24,7 +24,7 @@
                 </div>
                 <div>
                     <ul class="pt-4">
-                        <li>
+                        <li clas>
                             <h5>DC COMICS</h5>
                         </li>
                         <li>TV</li>
@@ -52,8 +52,8 @@
             </div>
 
 
-            <div class="d-flex justify-content-end">
-                <img class="img-logo" :src="'/images/dc-logo-bg.png'" alt="">
+            <div class="d-flex justify-content-end ">
+                <img class="img-logo " :src="'/images/dc-logo-bg.png'" alt="">
             </div>
         </div>
         <div class="d-flex justify-content-between align-items-center padding-left heigth-footer">
