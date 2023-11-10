@@ -1,8 +1,8 @@
 <template>
   <HeaderApp />
-  <Header2App v-for="contact in lista" :thumb="contact.thumb" :series="contact.series" :type="contact.type">
-
-  </Header2App>
+  <div class="d-flex flex-wrap height-black ">
+    <Card v-for="contact in lista" :thumb="contact.thumb" :series="contact.series" :type="contact.type" />
+  </div>
   <MainApp />
 
 
@@ -11,7 +11,7 @@
 
 <script>
 import HeaderApp from './components/HeaderApp.vue';
-import Header2App from './components/Header2App.vue';
+import Card from './components/Card.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
 
@@ -21,7 +21,7 @@ export default {
   name: 'App',
   components: {
     HeaderApp,
-    Header2App,
+    Card,
     MainApp,
     FooterApp,
 
@@ -38,4 +38,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.height-black {
+
+  padding-right: 300px;
+  padding-left: 300px;
+  background-color: black;
+}
+</style>

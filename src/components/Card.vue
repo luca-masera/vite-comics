@@ -1,17 +1,13 @@
 <template>
-    <div class="height-black d-flex padding">
-
+    <div class="d-flex flex-column ">
         <img :src="thumb" :alt="type">
         <span>{{ series }} </span>
-
-
-
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Header2App',
+    name: 'Card',
     props: {
         thumb: String,
         series: String,
@@ -22,17 +18,17 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.height-black {
-    height: 150px;
-    background-color: black;
-}
-
 img {
-    width: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
 }
 
-.padding {
-    padding-left: 300px;
-    padding-right: 400px;
+
+
+
+span {
+    color: white;
+    width: 18px;
 }
 </style>
